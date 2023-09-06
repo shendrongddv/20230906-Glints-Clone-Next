@@ -108,7 +108,7 @@ export const FooterBody = () => {
             <div className="flex flex-col gap-1">
               <span className="text-xs leading-none">Download</span>
               <span className="text-base font-semibold leading-none text-white">
-                Android App
+                Play Store
               </span>
             </div>
           </Link>
@@ -136,7 +136,7 @@ export const FooterBody = () => {
             <div className="flex flex-col gap-1">
               <span className="text-xs leading-none">Download</span>
               <span className="text-base font-semibold leading-none text-white">
-                iOS App
+                App Store
               </span>
             </div>
           </Link>
