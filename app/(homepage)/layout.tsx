@@ -1,3 +1,6 @@
+import Footer from "@/components/footer/footer";
+import Header from "@/components/header/header";
+
 interface HomepageLayoutProps {
   children: React.ReactNode;
 }
@@ -5,5 +8,11 @@ interface HomepageLayoutProps {
 export default async function HomepageLayout({
   children,
 }: HomepageLayoutProps) {
-  return <>{children}</>;
+  return (
+    <>
+      <Header />
+      <main>{children}</main>
+      <Footer />
+    </>
+  );
 }

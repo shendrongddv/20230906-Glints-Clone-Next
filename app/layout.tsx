@@ -33,11 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={cn(
-          "min-h-screen font-body antialiased",
-          fontDisplay.variable,
-          fontBody.variable,
-        )}
+        className={cn("min-h-screen", fontDisplay.variable, fontBody.variable)}
       >
         {children}
       </body>
