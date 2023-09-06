@@ -91,9 +91,9 @@ export const FooterBody = () => {
             className={cn(
               buttonVariants({
                 variant: "outline",
-                size: "lg",
+                size: "default",
                 className:
-                  "flex h-max w-full items-center justify-start gap-2 bg-transparent px-4 py-3 hover:bg-transparent hover:text-white",
+                  "flex h-max w-full items-center justify-start gap-4 bg-transparent hover:bg-transparent hover:text-white",
               }),
             )}
           >
@@ -106,10 +106,8 @@ export const FooterBody = () => {
             />
 
             <div className="flex flex-col gap-1">
-              <span className="text-xs font-semibold leading-none">
-                Download
-              </span>
-              <span className="text-lg font-extrabold leading-none text-white">
+              <span className="text-xs leading-none">Download</span>
+              <span className="text-base font-semibold leading-none text-white">
                 Android App
               </span>
             </div>
@@ -121,9 +119,9 @@ export const FooterBody = () => {
             className={cn(
               buttonVariants({
                 variant: "outline",
-                size: "lg",
+                size: "default",
                 className:
-                  "flex h-max w-full items-center justify-start gap-4 bg-transparent px-4 py-3 hover:bg-transparent hover:text-white",
+                  "flex h-max w-full items-center justify-start gap-4 bg-transparent hover:bg-transparent hover:text-white",
               }),
             )}
           >
@@ -136,10 +134,8 @@ export const FooterBody = () => {
             />
 
             <div className="flex flex-col gap-1">
-              <span className="text-xs font-semibold leading-none">
-                Download
-              </span>
-              <span className="text-lg font-extrabold leading-none text-white">
+              <span className="text-xs leading-none">Download</span>
+              <span className="text-base font-semibold leading-none text-white">
                 iOS App
               </span>
             </div>
