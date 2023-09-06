@@ -73,7 +73,7 @@
     @apply border-border;
   }
   body {
-    @apply bg-background font-body text-foreground antialiased;
+    @apply bg-[#F8FAFC] font-body text-foreground antialiased;
   }
 }
 
@@ -97,11 +97,11 @@ h6 {
 }
 
 .h2 {
-  @apply text-2xl leading-snug md:text-4xl;
+  @apply text-2xl leading-snug md:text-3xl;
 }
 
 .h3 {
-  @apply text-lg leading-snug md:text-xl;
+  @apply text-base leading-snug md:text-xl;
 }
 
 .h4 {

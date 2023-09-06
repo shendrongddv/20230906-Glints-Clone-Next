@@ -13,7 +13,7 @@ import { buttonVariants } from "../ui/button";
 
 export const FooterBody = () => {
   return (
-    <div className="grid gap-10 sm:grid-cols-2 md:flex md:justify-evenly md:gap-4">
+    <div className="grid gap-10 sm:grid-cols-2 md:flex md:justify-between md:gap-4">
       {/* Col */}
       <div className="flex flex-col gap-4 md:w-1/4">
         <SiteLogoFooter />
