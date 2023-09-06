@@ -72,7 +72,7 @@ export const HomepageOverview = () => {
                     className={cn(
                       buttonVariants({
                         variant: "secondary",
-                        size: "sm",
+                        size: "default",
                         className:
                           "flex items-center justify-center text-center",
                       }),
@@ -114,7 +114,7 @@ const JobItem = ({ name, label, icon: Icon, color }: JobItemProps) => {
         buttonVariants({
           variant: "outline",
           size: "default",
-          className: `border-[#${color}] text-[#${color}] flex h-full flex-col items-center gap-2 bg-white text-center max-md:border-b-4 md:flex-row md:justify-center md:border-l-4`,
+          className: `border-[${color}] text-[${color}] flex h-full flex-col items-center gap-2 bg-white text-center max-md:border-b-4 md:flex-row md:justify-center md:border-l-4`,
         }),
       )}
     >

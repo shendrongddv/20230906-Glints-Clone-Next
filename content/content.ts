@@ -98,19 +98,19 @@ export const contentJobSearchCategories = [
     name: "Aktif Merekrut",
     label: "aktif-merekrut",
     icon: Flame,
-    color: "EC2728",
+    color: "#EC2728",
   },
   {
     name: "WFH / Remore",
     label: "wfh-remote",
     icon: Globe,
-    color: "CEC001",
+    color: "#CEC001",
   },
   {
     name: "Fresh Graduates",
     label: "fresh-graduates",
     icon: GraduationCap,
-    color: "2B5CA3",
+    color: "#2B5CA3",
   },
 ];
 

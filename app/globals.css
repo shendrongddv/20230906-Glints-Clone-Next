@@ -101,7 +101,7 @@ h6 {
 }
 
 .h3 {
-  @apply text-base leading-snug md:text-xl;
+  @apply text-lg leading-snug md:text-xl;
 }
 
 .h4 {
