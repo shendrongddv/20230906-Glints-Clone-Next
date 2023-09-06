@@ -26,7 +26,7 @@ export const HomepageFindJobByCity = () => {
         </div>
 
         {/* # */}
-        <ul className="flex flex-wrap items-center justify-center md:w-3/4 md:gap-2">
+        <ul className="flex flex-wrap items-center justify-center gap-1 md:w-3/4 md:gap-2">
           {contentCities.slice(0, 12)?.map((item) => (
             <li key={item.label}>
               <Link

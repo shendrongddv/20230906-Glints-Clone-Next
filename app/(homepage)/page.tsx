@@ -1,4 +1,5 @@
 import { HomepageFindJobByCity } from "@/components/home-find-job-by-city";
+import { HomepageOverview } from "@/components/home-overview";
 
 export default function Homepage() {
   return (
@@ -23,15 +24,9 @@ export default function Homepage() {
       </section>
       {/* ./ Job Search */}
 
-      {/* Popular Jobs */}
-      <section className="border-b px-4 py-16">
-        <div className="container">
-          <div>
-            <h2 className="h2">Popular Jobs</h2>
-          </div>
-        </div>
-      </section>
-      {/* ./ Popular Jobs */}
+      {/* Overview */}
+      <HomepageOverview />
+      {/* ./ Overview */}
 
       {/* Job position & Company */}
       <section className="border-b px-4 py-16">
