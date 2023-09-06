@@ -197,3 +197,37 @@ export const siteFooterLinks = [
     ],
   },
 ];
+
+// AsiaPacific
+export const siteAsiaPacific = [
+  {
+    id: 1,
+    label: "Singapore",
+    url: "/",
+    media: "sg.png",
+  },
+  {
+    id: 2,
+    label: "Indonesia",
+    url: "/",
+    media: "id.svg",
+  },
+  {
+    id: 3,
+    label: "Malaysia",
+    url: "/",
+    media: "my.svg",
+  },
+  {
+    id: 4,
+    label: "Taiwan",
+    url: "/",
+    media: "tw.svg",
+  },
+  {
+    id: 5,
+    label: "Vietnam",
+    url: "/",
+    media: "vn.png",
+  },
+];
