@@ -1,5 +1,7 @@
+import { HomepageFeatures } from "@/components/h-features";
 import { HomepageFindJobByCity } from "@/components/home-find-job-by-city";
 import { HomepageOverview } from "@/components/home-overview";
+import { SuccessStory } from "@/components/home-success-story";
 
 export default function Homepage() {
   return (
@@ -49,23 +51,11 @@ export default function Homepage() {
       {/* ./ CTA 1 */}
 
       {/* Succes Stories */}
-      <section className="border-b px-4 py-16">
-        <div className="container">
-          <div>
-            <h2 className="h2">Succes Stories</h2>
-          </div>
-        </div>
-      </section>
+      <SuccessStory />
       {/* ./ Succes Stories */}
 
       {/* Features */}
-      <section className="border-b px-4 py-16">
-        <div className="container">
-          <div>
-            <h2 className="h2">Features</h2>
-          </div>
-        </div>
-      </section>
+      <HomepageFeatures />
       {/* ./ Features */}
 
       {/* Job by Cities */}
