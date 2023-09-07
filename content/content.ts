@@ -242,9 +242,8 @@ export const contentJobPositions = [
 export const contentSuccessStory = [
   {
     id: 1,
-    name: "Windya A.",
+    name: "Peru, Inc.",
     age: 24,
-    job: "Content Strategist",
     avatar: "user-1.jpg",
     content:
       "Glints jadi platform cari kerja yang paling mudah & cepat buatku. Aku berhasil career switch ke bidang yang jadi passion-ku dan dapat kerja cuma dalam 4 hari.",
@@ -288,5 +287,63 @@ export const contentFeatures = [
     title: "Atau, mau tahu status lamaranmu? Bisa!",
     desc: "Lacak status terbaru lamaran kerjamu kapan saja, di mana saja, via aplikasi.",
     media: "feature-3.webp",
+  },
+];
+
+// Companies
+export const contentCompanies = [
+  {
+    id: "cced1090-18f4-5087-8a5b-f162bfaf6403",
+    name: "Madagascar, Inc.",
+    url: "/",
+    media: "logoipsum-1.svg",
+  },
+  {
+    id: "f6fa7e16-ba8f-57a4-a561-38502b942963",
+    name: "Isle of Man, Inc.",
+    url: "/",
+    media: "logoipsum-2.svg",
+  },
+  {
+    id: "684916b2-eacf-5075-a6a7-5fbeaffacb36",
+    name: "Suriname, Inc.",
+    url: "/",
+    media: "logoipsum-3.svg",
+  },
+  {
+    id: "4da65cf9-6db2-5edf-9ea4-a6c7087c67f5",
+    name: "Suriname, Inc.",
+    url: "/",
+    media: "logoipsum-5.svg",
+  },
+  {
+    id: "b7de0a47-2d73-5bec-abb0-f6eb24131479",
+    name: "Cuba, Inc.",
+    url: "/",
+    media: "logoipsum-9.svg",
+  },
+  {
+    id: "fbbc861d-3eba-5d5d-b9fe-9583636d2b8f",
+    name: "Niger, Inc.",
+    url: "/",
+    media: "logoipsum-8.svg",
+  },
+  {
+    id: "ad2b069b-b4d6-5ef5-a214-cb056e93fad5",
+    name: "South Korea, Inc.",
+    url: "/",
+    media: "logoipsum-10.svg",
+  },
+  {
+    id: "449a57b0-5d9c-5738-8b7c-aa43c5db6d22",
+    name: "Spain, Inc.",
+    url: "/",
+    media: "logoipsum-12.svg",
+  },
+  {
+    id: "93d2ecf5-5830-5112-8bca-693d0e2932fe",
+    name: "Argentina, Inc.",
+    url: "/",
+    media: "logoipsum-11.svg",
   },
 ];

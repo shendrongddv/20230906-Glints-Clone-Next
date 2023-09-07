@@ -1,4 +1,5 @@
 import {
+  contentCompanies,
   contentJobPositions,
   contentJobSearchCategories,
 } from "@/content/content";
@@ -6,6 +7,7 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { buttonVariants } from "./ui/button";
 import { LucideIcon } from "lucide-react";
+import Image from "next/image";
 
 export const HomepageOverview = () => {
   return (
@@ -87,9 +89,37 @@ export const HomepageOverview = () => {
 
           {/* Trusted Company */}
           <div className="space-y-4">
+            {/* # */}
             <h2 className="h3 font-bold">
               Perusahaan tepercaya sedang merekrut
             </h2>
+
+            {/* # */}
+            <ul className="flex flex-wrap gap-1 md:gap-2">
+              {contentCompanies?.map((item) => (
+                <li key={item.id}>
+                  <Link
+                    href={item.url}
+                    aria-label={item.name}
+                    className={cn(
+                      buttonVariants({
+                        variant: "outline",
+                        size: "lg",
+                        className: "h-full bg-transparent px-3 py-2 md:px-4",
+                      }),
+                    )}
+                  >
+                    <Image
+                      src={`/company/${item.media}`}
+                      alt={item.name}
+                      width={64}
+                      height={64}
+                      className="h-8 w-auto md:h-11"
+                    />
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>
