@@ -34,7 +34,7 @@ export const SuccessStory = () => {
                 {/* # */}
                 <div className="flex flex-col gap-3">
                   {/* ## */}
-                  <p className="text-sm">"{item.content}"</p>
+                  <p className="text-sm">{item.content}</p>
 
                   {/* ## */}
                   <div className="flex items-center gap-2">
