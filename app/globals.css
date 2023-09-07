@@ -107,3 +107,12 @@ h6 {
 .h4 {
   @apply leading-snug;
 }
+
+.gradient {
+  background: linear-gradient(301deg, #fff240 0%, #fff9a9 100%);
+}
+
+/* Swiper */
+.swiper-pagination {
+  @apply !relative inline-flex border p-2;
+}

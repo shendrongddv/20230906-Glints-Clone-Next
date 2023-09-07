@@ -1,5 +1,27 @@
 import { Flame, Globe, GraduationCap } from "lucide-react";
 
+// Banner
+export const contentBanner = [
+  {
+    id: 1,
+    label: "Banner 1",
+    media: "banner-1.jpg",
+    url: "/",
+  },
+  {
+    id: 2,
+    label: "Banner 2",
+    media: "banner-2.jpg",
+    url: "/",
+  },
+  {
+    id: 3,
+    label: "Banner 3",
+    media: "banner-3.jpg",
+    url: "/",
+  },
+];
+
 // Cities
 export const contentCities = [
   {
