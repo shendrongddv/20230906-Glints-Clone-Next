@@ -27,7 +27,7 @@ export const SSearchByCity = () => {
         />
 
         {/* # */}
-        <ul className="flex flex-wrap justify-center gap-1 md:gap-2">
+        <ul className="flex flex-wrap justify-center md:gap-2">
           {contentCities.slice(0, 12)?.map((item) => (
             <li key={item.label}>
               <Link
@@ -38,7 +38,7 @@ export const SSearchByCity = () => {
                     variant: "ghost",
                     size: "sm",
                     className:
-                      "flex items-center justify-center text-center text-xs sm:gap-2 md:text-base",
+                      "flex items-center justify-center gap-1 text-center",
                   }),
                 )}
               >

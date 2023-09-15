@@ -28,3 +28,34 @@ export const dummyExpertClass = [
     media: "class-3.webp",
   },
 ];
+
+// SocialProof
+export const dummySocialProof = [
+  {
+    id: 1,
+    name: "Peru, Inc.",
+    age: 24,
+    job: "Flutter Developer",
+    avatar: "user-1.jpg",
+    content:
+      "Glints jadi platform cari kerja yang paling mudah & cepat buatku. Aku berhasil career switch ke bidang yang jadi passion-ku dan dapat kerja cuma dalam 4 hari.",
+  },
+  {
+    id: 2,
+    name: "Wahyu",
+    age: 24,
+    job: "Flutter Developer",
+    avatar: "user-2.jpg",
+    content:
+      "Berkat Glints, aku bisa dapat kerja di 3 perusahaan keren, punya karier cemerlang & berhasil menggerakkan teman-temanku untuk mengejar mimpi mereka.",
+  },
+  {
+    id: 3,
+    name: "Bibah",
+    age: 24,
+    job: "Private Tutor",
+    avatar: "user-3.jpg",
+    content:
+      "Satu hal yang aku suka dari Glints itu lamaranku cepet direview dan gampang untuk ngelihat statusnya.",
+  },
+];
