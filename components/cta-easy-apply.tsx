@@ -1,11 +1,10 @@
+import Link from "next/link";
 import Image from "next/image";
 
-import { MessageCircle } from "lucide-react";
-import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "./ui/button";
 
-export const HomepageCTA1 = () => {
+export const CTAEasyApply = () => {
   return (
     <section id="cta-1" className="gradient px-4 pt-16">
       <div className="container">

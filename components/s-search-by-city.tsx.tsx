@@ -1,11 +1,14 @@
-import { contentCities } from "@/content/content";
-import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
+
+import { cn } from "@/lib/utils";
 import { buttonVariants } from "./ui/button";
+
 import { Search } from "lucide-react";
 
-export const HomepageFindJobByCity = () => {
+import { contentCities } from "@/content/content";
+
+export const SSearchByCity = () => {
   return (
     <section className="border-b px-4 py-16">
       <div className="container flex flex-col items-center gap-4">

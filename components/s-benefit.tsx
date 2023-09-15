@@ -1,8 +1,10 @@
-import { contentFeatures } from "@/content/content";
 import Image from "next/image";
+
 import { Button } from "./ui/button";
 
-export const HomepageFeatures = () => {
+import { contentFeatures } from "@/content/content";
+
+export const SBenefit = () => {
   return (
     <section className="bg-[url(/bg-3.jpg)] bg-cover bg-center bg-no-repeat px-4 py-16">
       <div className="container flex flex-col gap-16">

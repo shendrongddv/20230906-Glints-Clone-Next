@@ -1,7 +1,8 @@
-import { contentSuccessStory } from "@/content/content";
 import Image from "next/image";
 
-export const SuccessStory = () => {
+import { contentSuccessStory } from "@/content/content";
+
+export const SSocialProff = () => {
   return (
     <section className="bg-[url(/bg-2.png)] bg-cover bg-center bg-no-repeat px-4 py-16">
       <div className="container space-y-8">

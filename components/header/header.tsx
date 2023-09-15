@@ -4,7 +4,7 @@ import { NavbarNav } from "./navbar-nav";
 
 const Header = () => {
   return (
-    <header className="sticky left-0 top-0 w-full border-b bg-white px-4 py-4">
+    <header className="sticky left-0 top-0 z-50 w-full border-b bg-white px-4 py-4">
       <div className="container flex items-center justify-between gap-8">
         {/* NavbarLogo */}
         <SiteLogoNavbar />

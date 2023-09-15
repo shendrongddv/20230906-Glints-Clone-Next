@@ -1,16 +1,18 @@
-import { HomepageCTA1 } from "@/components/h-cta-1";
-import { HomepageFeatures } from "@/components/h-features";
-import { HomepageFindJobByCity } from "@/components/home-find-job-by-city";
+import { SPromotion } from "@/components/s-promotion";
 import { HomepageOverview } from "@/components/home-overview";
-import { SuccessStory } from "@/components/home-success-story";
-import { SlideBanner } from "@/components/slide-banner";
+import { CTAEasyApply } from "@/components/cta-easy-apply";
+import { SSocialProff } from "@/components/s-social-proof";
+import { SBenefit } from "@/components/s-benefit";
+import { SSearchByCity } from "@/components/s-search-by-city.tsx";
+import { SExpertClass } from "@/components/s-expert-class";
+import { SSearchPopular } from "@/components/s-search-popular";
 
 export default function Homepage() {
   return (
     <>
-      {/* Slides */}
-      <SlideBanner />
-      {/* ./ Slides */}
+      {/* Promotion */}
+      <SPromotion />
+      {/* ./ Promotion */}
 
       {/* Job Search */}
       <section className="border-b px-4 py-16">
@@ -26,40 +28,28 @@ export default function Homepage() {
       <HomepageOverview />
       {/* ./ Overview */}
 
-      {/* CTA 1 */}
-      <HomepageCTA1 />
-      {/* ./ CTA 1 */}
+      {/* CTA: Easy Apply */}
+      <CTAEasyApply />
+      {/* ./ CTA: Easy Apply */}
 
-      {/* Succes Stories */}
-      <SuccessStory />
-      {/* ./ Succes Stories */}
+      {/* Social Proff */}
+      <SSocialProff />
+      {/* ./ Social Proff */}
 
-      {/* Features */}
-      <HomepageFeatures />
-      {/* ./ Features */}
+      {/* Benefit */}
+      <SBenefit />
+      {/* ./ Benefit */}
 
-      {/* Job by Cities */}
-      <HomepageFindJobByCity />
-      {/* ./ Job by Cities */}
+      {/* Search by City */}
+      <SSearchByCity />
+      {/* ./ Search by City */}
 
       {/* Expert Class */}
-      <section className="border-b px-4 py-16">
-        <div className="container">
-          <div>
-            <h2 className="h2">Expert Class</h2>
-          </div>
-        </div>
-      </section>
+      <SExpertClass />
       {/* ./ Expert Class */}
 
       {/* Popular Search */}
-      <section className="border-b px-4 py-16">
-        <div className="container">
-          <div>
-            <h2 className="h2">Popular Search</h2>
-          </div>
-        </div>
-      </section>
+      <SSearchPopular />
       {/* ./ Popular Search */}
     </>
   );

@@ -1,0 +1,3 @@
+.swiper-pagination {
+  @apply !relative inline-flex border p-2;
+}

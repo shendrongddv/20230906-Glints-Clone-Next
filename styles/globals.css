@@ -73,46 +73,12 @@
     @apply border-border;
   }
   body {
-    @apply bg-[#F8FAFC] font-body text-foreground antialiased;
+    @apply bg-[#F8FAFC] text-foreground;
   }
 }
 
-:root,
-html,
-body {
-  height: 100%;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  @apply font-display;
-}
-
-.h1 {
-  @apply text-3xl leading-snug md:text-5xl;
-}
-
-.h2 {
-  @apply text-2xl leading-snug md:text-3xl;
-}
-
-.h3 {
-  @apply text-lg leading-snug md:text-xl;
-}
-
-.h4 {
-  @apply leading-snug;
-}
-
-.gradient {
-  background: linear-gradient(301deg, #fff240 0%, #fff9a9 100%);
-}
+/* Typography */
+@import "./typography.css";
 
 /* Swiper */
-.swiper-pagination {
-  @apply !relative inline-flex border p-2;
-}
+@import "./swiper.css";
