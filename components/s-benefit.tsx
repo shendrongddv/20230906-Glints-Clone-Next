@@ -1,8 +1,10 @@
 import Image from "next/image";
 
-import { Button } from "./ui/button";
+import { Button, buttonVariants } from "./ui/button";
 
 import { contentFeatures } from "@/content/content";
+import Link from "next/link";
+import { cn } from "@/lib/utils";
 
 export const SBenefit = () => {
   return (
@@ -43,14 +45,25 @@ export const SBenefit = () => {
         </ul>
 
         {/* CTA */}
-        <div className="flex flex-col text-center">
-          <h2 className="h2 font-bold text-white">
-            Cocok. Lamar. Kerja. Semua bisa di aplikasi!
-          </h2>
-          <p className="mt-3 text-white">
+        <div className="flex w-full flex-col items-center gap-2 text-center text-white max-md:px-4">
+          <h2 className="h2">Cocok. Lamar. Kerja. Semua bisa di aplikasi!</h2>
+          <p>
             Temukan pekerjaan dan karier impianmu dengan lebih banyak fitur di
             aplikasi.
           </p>
+          <Link
+            href="/"
+            aria-label="Unduh Aplikasi Glints"
+            className={cn(
+              buttonVariants({
+                variant: "destructive",
+                size: "lg",
+                className: "mt-6 w-full md:w-max md:px-8",
+              }),
+            )}
+          >
+            Unduh Aplikasi Glints
+          </Link>
         </div>
       </div>
     </section>

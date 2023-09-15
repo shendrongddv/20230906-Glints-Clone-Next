@@ -23,7 +23,7 @@ export const SlideExpertClass = () => {
   return (
     <Swiper
       modules={[Navigation, Pagination, Autoplay, EffectFade]}
-      // loop
+      loop
       autoplay={{
         delay: 5000,
         disableOnInteraction: false,
@@ -53,7 +53,7 @@ export const SlideExpertClass = () => {
 
         1140: {
           slidesPerView: 3,
-          spaceBetween: 24,
+          spaceBetween: 32,
         },
       }}
       className="AAA"
@@ -93,8 +93,8 @@ const SlideSingle = ({
   media,
 }: SlideSingleProps) => {
   return (
-    <div className="w-full overflow-hidden rounded-xl bg-background p-1">
-      <div className="aspect-h-3 aspect-w-6 overflow-hidden rounded-xl">
+    <div className="w-full overflow-hidden rounded-xl bg-background p-2">
+      <div className="aspect-h-3 aspect-w-6 overflow-hidden rounded-lg">
         <Image
           src={`/${media}`}
           alt={title}
@@ -104,8 +104,8 @@ const SlideSingle = ({
         />
       </div>
 
-      <div className="flex flex-col gap-3 px-3 py-4">
-        <div className="flex items-center justify-between">
+      <div className="flex flex-col gap-3 p-2">
+        <div className="mt-2 flex items-center justify-between">
           <small className="flex items-center gap-1 text-xs text-muted-foreground">
             <Calendar className="h-3 w-3" />
             {date}
