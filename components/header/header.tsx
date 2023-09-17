@@ -1,5 +1,6 @@
 import { SiteLogoNavbar } from "../site-logo";
 import { NavbarButton } from "./navbar-button";
+import { NavbarMobile } from "./navbar-mobile";
 import { NavbarNav } from "./navbar-nav";
 
 const Header = () => {
@@ -16,6 +17,9 @@ const Header = () => {
           {/* NavbarButtons */}
           <NavbarButton />
         </div>
+
+        {/* Mobile */}
+        <NavbarMobile />
       </div>
     </header>
   );
