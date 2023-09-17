@@ -20,7 +20,7 @@ h6 {
 }
 
 .h4 {
-  @apply text-lg leading-snug;
+  @apply text-lg font-bold leading-snug;
 }
 
 .gradient {

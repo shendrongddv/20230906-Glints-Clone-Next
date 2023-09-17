@@ -1,11 +1,11 @@
 import { SPromotion } from "@/components/s-promotion";
-import { HomepageOverview } from "@/components/home-overview";
 import { CTAEasyApply } from "@/components/cta-easy-apply";
 import { SSocialProff } from "@/components/s-social-proof";
 import { SBenefit } from "@/components/s-benefit";
 import { SSearchByCity } from "@/components/s-search-by-city.tsx";
 import { SExpertClass } from "@/components/s-expert-class";
 import { SSearchPopular } from "@/components/s-search-popular";
+import { SIntroduction } from "@/components/s-introduction";
 
 export default function Homepage() {
   return (
@@ -14,19 +14,9 @@ export default function Homepage() {
       <SPromotion />
       {/* ./ Promotion */}
 
-      {/* Job Search */}
-      <section className="border-b px-4 py-16">
-        <div className="container">
-          <div>
-            <h2 className="h2">Job Search</h2>
-          </div>
-        </div>
-      </section>
-      {/* ./ Job Search */}
-
-      {/* Overview */}
-      <HomepageOverview />
-      {/* ./ Overview */}
+      {/* Introduction */}
+      <SIntroduction />
+      {/* ./ Introduction */}
 
       {/* CTA: Easy Apply */}
       <CTAEasyApply />
