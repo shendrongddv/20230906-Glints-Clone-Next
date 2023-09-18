@@ -3,20 +3,22 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "../ui/button";
 
-import { contentNavbarLinks } from "@/content/site";
+import { navbarNav } from "@/config/site";
 
-export const NavbarNav = () => {
+export const NavLinks = () => {
+  const items = navbarNav;
+
   return (
     <nav>
-      <ul className="flex items-center justify-center gap-2">
-        {contentNavbarLinks?.map((item) => (
+      <ul className="flex items-center justify-center gap-1">
+        {items?.map((item) => (
           <li key={item.id}>
             <Link
               href={item.url}
               aria-label={item.label}
               className={cn(
                 buttonVariants({
-                  variant: "outline",
+                  variant: "ghost",
                   size: "sm",
                   className: "",
                 }),

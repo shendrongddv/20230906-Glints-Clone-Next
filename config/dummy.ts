@@ -64,6 +64,31 @@ export const BrandLogo = [
   },
 ];
 
+// Banner
+export const Promotions = [
+  {
+    id: "6c79d8fd-fdbe-5325-aa86-4b059b7d57fc",
+    title: "Banner 1",
+    media: "banner-1.webp",
+    mediaSmall: "banner-small-1.webp",
+    url: "/",
+  },
+  {
+    id: "bb380a35-819e-5c28-83f6-3b1885077ef0",
+    title: "Banner 2",
+    media: "banner-2.webp",
+    mediaSmall: "banner-small-2.webp",
+    url: "/",
+  },
+  {
+    id: "66621e05-94c4-5eb8-841c-374658810a4e",
+    title: "Banner 3",
+    media: "banner-3.webp",
+    mediaSmall: "banner-small-3.webp",
+    url: "/",
+  },
+];
+
 // ExpertClass
 export const dummyExpertClass = [
   {
@@ -96,13 +121,13 @@ export const dummyExpertClass = [
 ];
 
 // SocialProof
-export const dummySocialProof = [
+export const SocialProof = [
   {
     id: 1,
-    name: "Peru, Inc.",
+    name: "Windya A.",
     age: 24,
-    job: "Flutter Developer",
-    avatar: "user-1.jpg",
+    job: "Content Strategist",
+    avatar: "user-1.webp",
     content:
       "Glints jadi platform cari kerja yang paling mudah & cepat buatku. Aku berhasil career switch ke bidang yang jadi passion-ku dan dapat kerja cuma dalam 4 hari.",
   },
@@ -111,16 +136,16 @@ export const dummySocialProof = [
     name: "Wahyu",
     age: 24,
     job: "Flutter Developer",
-    avatar: "user-2.jpg",
+    avatar: "user-2.webp",
     content:
       "Berkat Glints, aku bisa dapat kerja di 3 perusahaan keren, punya karier cemerlang & berhasil menggerakkan teman-temanku untuk mengejar mimpi mereka.",
   },
   {
     id: 3,
-    name: "Bibah",
-    age: 24,
-    job: "Private Tutor",
-    avatar: "user-3.jpg",
+    name: "Ashalia T. Tasha",
+    age: 21,
+    job: "Marketing Communication",
+    avatar: "user-3.webp",
     content:
       "Satu hal yang aku suka dari Glints itu lamaranku cepet direview dan gampang untuk ngelihat statusnya.",
   },

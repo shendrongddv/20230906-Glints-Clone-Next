@@ -9,7 +9,9 @@ export const SIntroduction = () => {
       <div className="container grid gap-16 md:grid-cols-2">
         {/* Col */}
         <div className="md:col-span-2">
-          <h2 className="h2 text-center">Cari 25,000+ loker di Indonesia</h2>
+          <h2 className="h2 text-center max-md:text-xl">
+            Cari 25,000+ loker di Indonesia
+          </h2>
         </div>
 
         {/* Col */}

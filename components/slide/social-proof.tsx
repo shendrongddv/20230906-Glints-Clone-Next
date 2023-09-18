@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 
 // Swiper
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -13,12 +12,10 @@ import "swiper/css";
 // import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 
-import { Calendar, Clock, PlayCircle } from "lucide-react";
-
-import { dummySocialProof } from "@/config/dummy";
+import { SocialProof } from "@/config/dummy";
 
 export const SlideSocialProff = () => {
-  const items = dummySocialProof;
+  const items = SocialProof;
 
   return (
     <Swiper

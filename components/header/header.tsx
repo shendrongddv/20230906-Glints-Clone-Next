@@ -1,7 +1,6 @@
 import { SiteLogoNavbar } from "../site-logo";
-import { NavbarButton } from "./navbar-button";
+import { NavbarDesktop } from "./navbar-desktop";
 import { NavbarMobile } from "./navbar-mobile";
-import { NavbarNav } from "./navbar-nav";
 
 const Header = () => {
   return (
@@ -10,13 +9,8 @@ const Header = () => {
         {/* NavbarLogo */}
         <SiteLogoNavbar />
 
-        <div className="hidden md:flex md:flex-1 md:items-center md:justify-between md:gap-4">
-          {/* NavbarNav */}
-          <NavbarNav />
-
-          {/* NavbarButtons */}
-          <NavbarButton />
-        </div>
+        {/* Desktop */}
+        <NavbarDesktop />
 
         {/* Mobile */}
         <NavbarMobile />

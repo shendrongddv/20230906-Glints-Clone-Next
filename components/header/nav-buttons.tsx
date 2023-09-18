@@ -5,16 +5,16 @@ import { buttonVariants } from "../ui/button";
 
 import { ArrowRight } from "lucide-react";
 
-export const NavbarButton = () => {
+export const NavButtons = () => {
   return (
-    <ul className="flex items-center justify-center gap-2">
+    <ul className="flex items-center justify-center gap-1">
       <li>
         <Link
           href="/"
           aria-label="Daftar"
           className={cn(
             buttonVariants({
-              variant: "outline",
+              variant: "ghost",
               size: "sm",
               className: "",
             }),
@@ -29,7 +29,7 @@ export const NavbarButton = () => {
           aria-label="Masuk"
           className={cn(
             buttonVariants({
-              variant: "outline",
+              variant: "ghost",
               size: "sm",
               className: "",
             }),
@@ -46,7 +46,7 @@ export const NavbarButton = () => {
             buttonVariants({
               variant: "default",
               size: "sm",
-              className: "",
+              className: "ml-4",
             }),
           )}
         >

@@ -15,13 +15,13 @@ export const NavbarMobile = () => {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <Button variant="outline" size="icon" className="">
+        <Button variant="outline" size="icon" className="md:hidden">
           <Menu className="h-4 w-4" />
         </Button>
       </SheetTrigger>
       <SheetContent
         side="left"
-        className="flex h-full w-4/5 flex-col gap-0 p-0"
+        className="flex h-full w-4/5 flex-col gap-0 p-0 md:hidden"
       >
         <SheetHeader className="border-b p-4">
           <SheetClose asChild>

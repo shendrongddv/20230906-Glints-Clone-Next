@@ -5,29 +5,63 @@ import Image from "next/image";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 // import Swiper core and required modules
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import "swiper/css/scrollbar";
-import { contentBanner } from "@/content/content";
+
+import { Promotions } from "@/config/dummy";
 
 export const SPromotion = () => {
+  const items = Promotions;
+
   return (
     <Swiper
-      // install Swiper modules
-      modules={[Navigation, Pagination, Scrollbar, A11y]}
-      spaceBetween={50}
-      slidesPerView={1}
+      modules={[Navigation, Pagination, Autoplay]}
+      loop
+      autoplay={{
+        delay: 5000,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
+      }}
+      centeredSlides={true}
+      slidesPerView="auto"
+      spaceBetween={0}
       // navigation
-      pagination={{ clickable: true }}
-      // scrollbar={{ draggable: true }}
+      // pagination={{ clickable: true }}
+      // breakpoints={{
+      //   360: {
+      //     slidesPerView: "auto",
+      //     spaceBetween: 0,
+      //   },
+      //   640: {
+      //     slidesPerView: "auto",
+      //     spaceBetween: 0,
+      //   },
+      //   768: {
+      //     slidesPerView: "auto",
+      //     spaceBetween: 0,
+      //   },
+      //   1024: {
+      //     slidesPerView: "auto",
+      //     spaceBetween: 0,
+      //   },
+
+      //   1140: {
+      //     slidesPerView: "auto",
+      //     spaceBetween: 0,
+      //   },
+      // }}
     >
-      {contentBanner?.map((item) => (
+      {items?.map((item) => (
         <SwiperSlide key={item.id}>
-          <CardBanner label={item.label} media={item.media} />
+          <CardBanner
+            title={item.title}
+            media={item.media}
+            mediaSmall={item.mediaSmall}
+          />
         </SwiperSlide>
       ))}
     </Swiper>
@@ -37,20 +71,29 @@ export const SPromotion = () => {
 // Component
 
 type CardBannerProps = {
-  label: string;
+  title: string;
   media: string;
+  mediaSmall: string;
   url?: string;
 };
-const CardBanner = ({ label, media, url }: CardBannerProps) => {
+const CardBanner = ({ title, media, mediaSmall, url }: CardBannerProps) => {
   return (
     <>
       <Image
         src={`/${media}`}
-        alt={label}
+        alt={title}
         priority
         width={2880}
         height={500}
-        className="h-auto w-full"
+        className="hidden h-auto w-full md:flex"
+      />
+      <Image
+        src={`/${mediaSmall}`}
+        alt={title}
+        priority
+        width={2880}
+        height={500}
+        className="h-auto w-full md:hidden"
       />
     </>
   );
